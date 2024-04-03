@@ -1,0 +1,178 @@
+body {
+    background-color: #282c34;
+    font: normal 1em/1.1;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    color: #d4d4d4;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+} 
+
+header h1 {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    background-color: #282c34;
+    max-width: 1300px;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+
+}
+
+article {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #61dafb;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d4d4d4;
+}
+
+article code {
+    background-color: #373c49;
+    border: 1px solid #61dafb;
+    border-radius: 2px;
+    padding: 0.25em 0.5em;
+    font: bold 1em/1.1 "Courier New", monospace;
+    display: block;
+    margin: 5px 0;
+    color: white;
+}
+
+img {
+    max-width: 600px;
+    max-height: 700px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: rgb(252, 80, 109);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(197, 57, 94)
+}
+
+aside {
+    width: 35%;
+    box-sizing: border-box;
+} 
+
+.sidebar {
+    padding-top: 30px;
+}
+
+
+h3 {
+    color: #61dafb;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #61dafb;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #282c34;
+    color: white;
+    margin-right: 16px;
+}
+
+form button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(252, 80, 109);
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #373c49;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #61dafb; /* Add border style */
+}
+
+.comment strong {
+    color: rgb(252, 80, 109);
+}
+
+.comment p {
+    margin: 0;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2e2e2e;
+    color: #d4d4d4;
+}
