@@ -2,30 +2,145 @@
     width: 1500px;
     height: 700px;
     position: relative;
-    background-image: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/kenney_rpg-urban-pack/Sample.png"); 
+    background-image: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/background%20image.png"); 
     background-size: cover;
 }
 
 .sprite {
+    -webkit-transition: all 5s ease;
     position: absolute;
-    transition: all 0.5s ease; 
-}
+    transition: all 5s ease; 
+} 
 
 #player {
-    width: 32px; 
-    height: 32px;
-    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/tile_0456.png"); 
-    top: 100px;
-    bottom: 30px;
-
+    width: 50px; 
+    height: 50px;
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/character.png") no-repeat;
+    top: 150px;
+    z-index: 2;
+    background-size: cover;
 }
 
 #house {
-    width: 64px; 
-    height: 64px;
+    width: 40px; 
+    height: 40px;
     /* transform: scale(2); */
-    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/kenney_tiny-town/Tiles/tile_0094.png") no-repeat; 
-    top: 300px; 
-    left: 500px;
-    
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/trigger.png") no-repeat; 
+    top: 226px; 
+    left: 510px;
+    background-size: cover;
+    cursor: pointer;
+    /* background-color: blue; */
 }
+
+.moveB {
+    -webkit-animation: moveBlue 10s;
+    animation: moveBlue 10s;
+}
+
+@keyframes moveBlue {
+    0% {
+        left: 0px;
+        top: 150px;
+    }
+    25% {
+        left: 40px;
+        top: 250px;
+    }
+    50% {
+        left: 510px;
+        top: 250px
+    }
+    75% {
+        left: 510px;
+        top: 223px;
+    }
+    100% {
+        left: 510px;
+        top: 226px;
+    }
+} 
+
+#house2 {
+    width: 40px; 
+    height: 40px;
+    /* transform: scale(2); */
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/trigger.png") no-repeat; 
+    top: 160px; 
+    left: 1170px;
+    background-size: cover;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+
+.moveY {
+    -webkit-animation: moveYellow 10s;
+    animation: moveYellow 10s;
+}
+
+@keyframes moveYellow {
+    0% {
+        left: 0px;
+        top: 150px;
+    }
+    20% {
+        left: 40px;
+        top: 250px;
+    }
+    40% {
+        left: 510px;
+        top: 250px
+    }
+    60% {
+        left: 510px;
+        top: 300px;
+    }
+    80% {
+        left: 1170px;
+        top: 300px;
+    }
+    100% {
+        left: 1170px;
+        top: 160px;
+    }
+} 
+
+#house3 {
+    width: 40px; 
+    height: 40px;
+    /* transform: scale(2); */
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/trigger.png") no-repeat; 
+    top: 550px; 
+    left: 700px;
+    background-size: cover;
+    cursor: pointer;
+    /* background-color: green; */
+}
+
+.moveG {
+    -webkit-animation: moveGreen 10s;
+    animation: moveGreen 10s;
+}
+
+@keyframes moveGreen {
+    0% {
+        left: 0px;
+        top: 150px;
+    }
+    25% {
+        left: 40px;
+        top: 250px;
+    }
+    50% {
+        left: 40px;
+        top: 515px
+    }
+    75% {
+        left: 680px;
+        top: 515px;
+    }
+    100% {
+        left: 700px;
+        top: 530px;
+    }
+} 
