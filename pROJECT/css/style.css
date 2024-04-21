@@ -14,16 +14,18 @@
 #player {
     width: 32px; 
     height: 32px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUAf6tsOdMWJfi4wDdNgOlmUsYUTLOgEOYoMLTzXJuA&s'); 
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/tile_0456.png"); 
     top: 100px;
     bottom: 30px;
+
 }
 
 #house {
     width: 64px; 
     height: 64px;
-    transform: scale(2);
+    /* transform: scale(2); */
     background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/kenney_tiny-town/Tiles/tile_0094.png") no-repeat; 
     top: 300px; 
     left: 500px;
+    
 }
