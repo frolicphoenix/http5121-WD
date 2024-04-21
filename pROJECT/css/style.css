@@ -15,7 +15,7 @@
 #player {
     width: 50px; 
     height: 50px;
-    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/character.png") no-repeat;
+    background: url("https://raw.githubusercontent.com/foenyxr/http5121-WD/main/pROJECT/images/front-walk.png") no-repeat;
     top: 150px;
     z-index: 2;
     background-size: cover;
