@@ -1,0 +1,46 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEEB; /* Light day sky color */
+  }
+  
+  #stage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #8FBC8F; /* Ground color */
+  }
+  
+  #ball {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: yellow; /* Sun color */
+    animation: sunriseAndSunset 10s infinite linear; /* Adjust time as needed */
+  }
+  
+  @keyframes sunriseAndSunset {
+    0% {
+      bottom: -10%; /* Start below the view to simulate rising */
+      left: 5%; /* Start from the left 5% */
+      background-color: #FFD700; /* Dawn color */
+    }
+    50% {
+      top: 50%; /* Reach the middle of the screen at 50% */
+      left: 50%; /* Central position at 50% */
+      transform: translate(-50%, -100%); /* Center the ball exactly */
+      background-color: #FFFF00; /* Noon color */
+    }
+    100% {
+      bottom: -10%; /* End below the view to simulate setting */
+      left: 95%; /* End at the right 95% */
+      background-color: #FF6347; /* Dusk color */
+    }
+  }
+  
