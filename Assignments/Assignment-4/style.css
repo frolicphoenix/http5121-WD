@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('path-to-background-image.png') repeat;
+    color: #fff;
+}
+
+header {
+    background: #FF6464;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+#intro {
+    text-align: center;
+    padding: 2em;
+}
+
+#intro h1 {
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+#intro p {
+    color: #000;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #FF6464;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+/* Projects section and others go here */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    /* Adjust styles for tablet */
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for mobile */
+}
+
+/* Additional styling based on the image goes here */
