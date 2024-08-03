@@ -1,0 +1,76 @@
+/*
+Hello professor, just wanted to let you know that this color
+scheme (palette) is intended. It was easier for me this way to work with 
+the borders.
+*/
+
+body {
+    background-color: rgb(255, 227, 227);
+    font: normal 1em/1.1 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    color: rgb(68, 68, 68);
+}
+
+main {
+    background-color: rgb(210, 255, 143);
+    width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(239, 214, 252);
+} 
+
+header h1 {
+    font-size: 2em;
+}
+
+a {
+    color: rgb(252, 80, 109);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(197, 57, 94)
+}
+
+code {
+    background-color: rgb(226, 178, 208);
+    border: 1px solid rgb(149, 107, 131);
+    border-radius: 2px;
+    padding: 0.25em 0.5em;
+    font: bold 1em/1.1 "Courier New", monospace;
+    display: block;
+    margin: 5px 0;
+    width: 700px;
+}
+
+/* 
+how do i make the block elements to have different border sizes (width)? 
+
+The text with the links shifts to the next line if i use 
+the code below.
+*/
+
+.code_link {
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(241, 103, 126);
+}
+
+.mcontent {
+    color: white;
+}
+
+.signup {
+    background-color: rgb(210, 255, 143);
+    width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unreal Engine Tutorials - pranjall</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+        <h1><a href="#">Devblog</a></h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Topics</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Importing Assets - UE Tutorial</h2>
+            <p style="opacity: 70%;"> 
+                <a href="#">Tutorials</a> > <a href="#">Unreal Engine Tutorials</a> > <a href="#"> Importing Assets</a>
+            </p>
+            <p>
+                By <strong>Pranjal Lokhande</strong> - 05 February 2024
+            </p>
+            <p>
+                While browsing here and there on YouTube, a tutorial video for creating Cinematic 3D film with Unreal Engine 5 by Dusty PIxels 
+                inspired me to make a short film/cinematic. I instantly started noting down any idea that came to my mind.
+            </p>
+            <p>
+                I imported the model (.fbx) in Blender, modified it a little and exported it to use it in Unreal Engine. 
+                There are two ways to import the fbx models using the FBX import settings; applying the texture materials to the model 
+                in Blender (best for skeletal meshes and animations) and then export it OR applying the texture materials to the model 
+                in the engine itself. I went with the latter.
+            </p>
+
+            <img src="images/blender.gif" alt="blender gif">
+            
+            <p>
+                While importing the textures, the engine crashed multiple times. I was able to fix it by simply changing the default 
+                graphics RHI to DirectX 11 and increasing texture streaming pool to 3000 mb (this may vary depending on the system) using the command:
+            </p>
+
+            <div>
+                <code>r.Streaming.PoolSize = 3000</code>
+            </div>
+
+            <p>Below is the models import setting which made my life much easier.</p>
+
+            <img src="images/import-settings.png" alt="import settings">
+
+            <p>
+                The model looked good enough to apply the textures. I looked for and tried multiple solutions to not apply individual textures manually, 
+                but figured this was the best and least time-consuming method for me. <i>*cries on my chair because UE crashes*</i>
+            </p>
+
+            <img src="images/no-texture-room.webp" alt="room with no textures">
+            <img src="images/texture-room.webp" alt="room with">
+
+            <p>
+                I definitely liked how it turned out, at least for now. The next step was to make a Metahuman character using the Metahuman creator and setting it up in the project. This will be covered in the next part of the blog.
+            </p>
+            <p>
+                Thank you for reading!
+            </p>
+
+            <section>
+                <h2>About the author</h2>
+                <p>Pranjal Lokhande is a fiend for game dev and related content. She is a Technical Game Designer and a Web Developer. 
+                    Through a series of engaging Tutorials and blogs about current industry trends, join the fascinating world of game mechanics, 
+                    graphics programming and gaming experiences. 
+                    
+                </p>
+            </section>
+
+            <section id="comments" class="comments">
+                <form>
+                    <h2>Add a comment</h2>
+                    <label for="com-name">Name:</label>
+                    <input type="text" id="com-name" name="com-name">
+                    <label for="com-content">Your comment:</label>
+                    <textarea id="com-content" name="com-content"></textarea>
+                    <button type="submit">Post comment</button>
+                </form>
+
+                <div class="comment-section">
+                    <h2>Comments</h2>
+                    <div class="comment">
+                        <strong>Parth:</strong>
+                        <p>This is a great tutorial! Thanks for sharing.</p>
+                    </div>
+                    <div class="comment">
+                        <strong>Masuko:</strong>
+                        <p>How do you import textures from mixamo? I have the model imported in FBX
+                            but i dont know how to add the textures manually. Please help.
+                        </p>
+                    </div>
+                </div>
+
+            </section> 
+        </article>
+            
+        <aside>
+            <div class="sidebar">
+                <h3>Recommended articles</h3>
+                <ul>
+                    <li><a href="#">Short film basics in Unreal Engine</a></li>
+                    <li><a href="#">Technical gameplay elements</a></li>
+                    <li><a href="#">How to use AI pathfinding in your levels?</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <h3>Want to stay up to date?</h3>
+                <p>Sign up for our newsletter.</p>
+
+                <form method="post">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="subscribe-email" placeholder="username@example.com">
+                    <button type="submit">Subscribe now</button>
+                </form>
+            </div>
+            
+        </aside>
+        
+    </main>
+                  
+    <footer id="footer">
+        &copy; 2024 Pranjal Lokhande. All rights reserved.
+    </footer>
+
+  </body>
+  
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL/DEFAULT STYLES
+ * 2. HEADER
+ * -- 2a. Site name and logo
+ * -- 2b. Navigation
+ * 3. MAIN CONTENT
+ * -- 3a. Hero
+ * -- 3b. Other sections
+ * 4. FOOTER
+ * -- 4a. Navigation
+ *************************************************************/
+
+/* 1. GENERAL/DEFAULT STYLES */
+:root {
+  --accent-color: #E0376A; 
+  --secondary-color: #000;
+}
+/* set CSS box-sizing to include border and padding */
+html {
+  box-sizing:border-box;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  /* set default font to 16px (1em) and Open Sans Light */
+  font:300 1em/1.2 "Open Sans",sans-serif;
+  margin:0; /* remove default margin */
+}
+h1, h2{
+  font-family:"Lato",sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+}
+h2 {
+  font-size:1.5em; /* 24px */
+}
+/* a {
+  color:var(--accent-color);
+}
+a:hover {
+  text-decoration:none;
+} */
+a.button, .button {
+  background-color:#000;
+  padding:12px;
+  color:#fff;
+  text-decoration:none;
+  font-size:0.9375em; /* 15px / 16px */
+  border-radius:10px;
+  display:inline-block;
+  min-width:153px;
+}
+.content-wrapper {
+  max-width:1300px;
+  margin:0 auto;
+  padding:20px; 
+}
+/* 2. HEADER */
+#header {
+  text-transform:uppercase;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+#header a {
+  color:var(--secondary-color);
+  text-decoration:none; /* remove underline */
+}
+
+/* -- 2a. Site name and logo */
+#logo-and-site-name {
+  font-size:2em; /* 32px / 16px (1em) = 2em */
+}
+#logo-and-site-name a::before {
+  content:"(^._.^)";
+  color:var(--accent-color);
+}
+
+/* -- 2b. Navigation */
+#main-navigation a {
+  font-family:"Lato", sans-serif;
+  font-size:1.5em; /* 24px / 16px = 1.5em */
+}
+#main-navigation a:hover {
+  color:var(--accent-color);
+}
+#main-navigation .menu {
+  display:flex;
+  list-style:none; /* remove bullet points */
+  padding:0;
+  column-gap:2.42em; /* 38.75px / 16px = 2.42em */
+}
+/* 3. MAIN CONTENT */
+
+/* -- 3a. Hero */
+.hero-text {
+  background: linear-gradient(to right, #11100e, #272322);
+  height:360px;
+}
+.hero-text .content-wrapper {
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  align-items:center;
+  justify-content: center;
+  background:url("../images/black-cat-hero.png") center center no-repeat;
+}
+.hero-text h1 {
+  font-size:6em; /* 96px / 16px */
+  color:#fff;
+  text-shadow:1px 1px 2px var(--accent-color);
+  text-align: center;
+
+}
+
+/* -- 3b. Other sections */
+.order-now {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* 4. FOOTER */
+
+/* -- 4a. Navigation */

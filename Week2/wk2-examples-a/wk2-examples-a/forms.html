@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <!-- All stuff that belongs to forms - including submit buttons - go inside a FORM element. -->
+    <!-- 
+      There is a method attribute (GET by default). This sets how form
+      data will be submitted.
+      
+      - "get": GET forms (the default if the method attribute is not set) submit the data 
+               via the URL. This is usually used for simple search
+               forms where it doesn't matter if the data is visible in the URL. Searches are
+               not secure data so this doesn't matter. It's also useful to be able to bookmark
+               a search page. Since GET forms pass data via the URL, there is a character limit on
+               GET form data.
+      - "post": POST forms do NOT submit via the URL, so this is inherently more secure (i.e. the
+                data is not immediately exposed). Most forms should use POST as the submission
+                method. Wherever there is more sensitive data, use POST (e.g. a login form or 
+                checkout form).
+    -->
+    <!--
+      There is an action attribute. This value is the destination (URI/URL) where the form data
+      will be submitted to. As we're not doing any server-side form processing in this class, you
+      can omit this attribute for this class, but it's important to know about this attribute.
+    -->
+    <h2>Search form example</h2>
+    <form method="get">
+      <label for="q">Search:</label><!-- the for attribute must point to an id for a field (e.g. input, textarea, etc)-->
+      <input type="text" id="q" name="query" placeholder="e.g. fox...">
+      <button type="submit">Search</button>
+    </form>
+
+    <h2>Login form example</h2>
+    <form method="post">
+      <div>
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="u" placeholder="john123">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pw"><!--password is still in plain text but it is obscured with black dots -->
+      </div>
+      <button type="submit">Log in</button>
+    </form>
+
+    <h2>Random form example</h2>
+    <p>The following is just a form used to test out a few form fields.</p>
+    <form method="post">
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="25" min="1">
+      </div>
+      <div>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+      </div>
+      <div>
+        <!-- if you want the number keypad to pop up but not see the number arrows (and it's not a phone number)-->
+        <label for="test">Testing inputmode:</label>
+        <input type="text" id="test" name="test" inputmode="numeric" placeholder="e.g. 1">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com">
+
+        <!-- in the case where you want to pass data but not have it visible-->
+        <input type="hidden" id="hidden-field" name="hidden-field" value="My hidden value">
+
+        <input type="color" id="c" name="c">
+        <input type="date" id="date" name="date">
+        <input type="url" id="url" name="url" placeholder="https://www.example.com">
+      </div>
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="subscribed">
+        <label for="subscribe">Subscribe to our newsletter</label>
+      </div>
+      <fieldset>
+        <legend>What is your age?</legend>
+        <!-- Radio button groups (and checkbox lists) should have have the same name value so that they BEHAVE like a group. -->
+        <input type="radio" id="ten" name="age" value="10s">
+        <label for="ten">10 - 19</label>
+        <input type="radio" id="twenty" name="age" checked value="20s"><!-- to select by default, use checked -->
+        <label for="twenty">20 - 29</label>
+      </fieldset>
+      <div>
+        <label for="reason">Reason for enquiry:</label>X
+        <select id="reason" name="reason">
+          <option disabled selected value="">-- Select a reason --</option>
+          <option value="sales">Sales enquiry</option>
+          <option value="legal">Legal enquiry</option>
+          <optgroup label="Other">
+            <option value="general">General enquiry</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+      </div>
+      <div>
+        <textarea id="message" name="msg" placeholder="Enter message here"></textarea><!--anything inside the opening/closing tags is content so leave no whitespace if you have placeholder text-->
+      </div>
+      
+      <button type="submit">Submit</button>
+      <button type="button">General button</button>
+      <button type="reset">Clear form</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+#flex-1, #flex-2 {
+  margin:1em 0;
+  background-color:purple;
+}
+.item {
+  background-color:yellow;
+  padding:30px;
+}
+
+/* FLEX 1 */
+#flex-1 {
+  max-width:500px; /* make this no wider than 500px */
+  height:300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+}
+
+.item:last-child {
+  align-self: flex-start;
+}
+
+
+/* FLEX 2 */
+#flex-2 {
+  padding:1em;
+  display: flex;
+  gap: 1em;
+}
+
+.double, .single {
+  padding:1em;
+  background-color:yellow;
+}
+
+.double {
+  flex-grow: 2;
+  flex-basis: 100%;
+  /* This is a flex item. */
+  /* Use flex-basis and flex-grow so this is double width. */
+
+}
+.single {
+  flex-grow: 1;
+  flex-basis: 50%;
+  /* This is a flex item. */
+  /* Use flex-basis and flex-grow so it's single width. */
+
+}
+#nested-flex {
+  background-color:#bfa0bf;
+  padding:1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-start;
+  /* This is a flex container. */
+  /* This row can break to a new line. */
+  
+}
+.card {
+  background-color:orange;
+  height:150px;
+  flex-basis: 100px;
+ 
+  /* This is a flex item. */
+  /* Cards have a default width of 100px (which flex item property to set the target width?) */
+  
+}
